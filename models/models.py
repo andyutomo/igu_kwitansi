@@ -2,6 +2,14 @@
 
 from odoo import models, fields, api
 
+
+class tradeIguKwitansi(models.Model):
+    _name="trade.kwitansi"
+    _description = "Kwitansi Module"
+    name = fields.Char("Nomor Kwitansi")
+    docdate = fields.Date("Document Date")
+    partner_id = fields.Char("Partner ID")
+    
 # class addons/igu_kwitansi/(models.Model):
 #     _name = 'addons/igu_kwitansi/.addons/igu_kwitansi/'
 
